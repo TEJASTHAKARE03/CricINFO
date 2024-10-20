@@ -1,0 +1,90 @@
+/* Set character encoding to utf-8 */
+@charset "utf-8";
+
+/* Reset some default styles */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the theme colors */
+body {
+    background: url('bck2.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Style the MATCH CENTER button */
+.match-center-button {
+    display: inline-block;
+    background-color: #f786cd; /* Your button color */
+    color: white;
+    text-decoration: none;
+    padding: 20px 40px; /* Increase the padding to make the button larger */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    top: 100px;
+    margin: 450px; /* Center the button horizontally */
+    width: 1000px; /* Ensure it takes the full width of its container */
+    text-align: center;
+    
+    
+}
+
+.match-center-button:hover {
+    background-color: #ff0077; /* Darker pink on hover */
+}
+
+/* Style the looping nation images */
+.nations-loop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+    width: 2800px; /* Adjust the width to accommodate all 8 images */
+    overflow: hidden;
+    animation: moveLoop 15s linear infinite; /* You can adjust the duration as needed */
+}
+
+@keyframes moveLoop {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-2800px); /* Adjust this value to match the total width of your images */
+    }
+}
+
+/* Style the sponsor images */
+.sponsors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px; /* Set height to 100px */
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Stretch across the bottom */
+}
+
+.sponsors img {
+    max-width: 1000px;
+    margin: 20px;
+}
+
+/* Style the footer links */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: whitesmoke;  Add a semi-transparent background */
+    padding: 10px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 30px; /* Increase or decrease this value to adjust the distance between links */
+    font-size: 80px;
+}

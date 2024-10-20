@@ -1,0 +1,166 @@
+/* Set character encoding to utf-8 */
+@charset "utf-8";
+
+/* Reset some default styles */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the theme colors */
+body {
+    background-color: #320073; /* Dark purple */
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #fd53bf; /* Pink */
+    text-align: center;
+    margin-top: 20px;
+    font-size: 32px;
+}
+
+/* Style the match cards */
+.match-card {
+    background-color: #f786cd; /* Pink */
+    color: white;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.match-card:hover {
+    background-color: #ff0077; /* Darker pink on hover */
+}
+
+/* Updated CSS for match cards */
+.match-card {
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color:fc3cb6 pink;
+}
+
+.match-card .match-info {
+    margin-bottom: 10px;
+}
+
+.match-card .match-score {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.match-card .inning-score {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* Style the match details button */
+.match-details-button {
+    background-color: #f786cd; /* Pink */
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    margin: 1px;
+    float: right;
+    top: 40%; /* Center vertically */
+    left: 50%;
+}
+
+.match-details-button:hover {
+    background-color: #ff0077; /* Darker pink on hover */
+}
+
+/* Center the button horizontally and vertically */
+.match-details-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Add pink hover effect to match cards and player cards */
+.player-card {
+    background-color: #f786cd; /* Pink */
+    color: white;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.player-card:hover {
+    background-color: #ff0077; /* Darker pink on hover */
+}
+
+/* Updated CSS for player cards */
+.player-card {
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: fc3cb6;
+}
+
+/* Updated CSS for series cards */
+.series-card {
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #f786cd; /* Light pink initially */
+    color: white;
+    /* Center align the series cards */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.series-card:hover {
+    background-color: #ff0077; /* Darker pink on hover */
+}
+
+/* Style the navigation bar */
+header nav {
+    background-color: #fc3cb6; /* Pink */
+    text-align: center;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    color: #ff0077; /* Darker pink on hover */
+}
